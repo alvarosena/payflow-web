@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*, button, input {
+  border: 0;
+  outline: 0;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background: var(--white);
+}
+
+:root {
+  --black: #000;
+  --white: #ffff;
+
+  --brand-primary: #FF941A;
+  --brand-secondary: #585666;
+    
+  --text-heading: #585666;
+  --text-body: #706E7A;
+  
+  --border: #E9E9EB;
+
+  --gray: #666;
+}

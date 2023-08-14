@@ -1,0 +1,26 @@
+.nav-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .nav-bar-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+
+    .btn-add {
+      background: var(--brand-primary);
+      border-radius: 5px;
+      width: 56px;
+      height: 56px;
+
+      transition: 0.2s;
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}
