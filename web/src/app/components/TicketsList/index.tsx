@@ -11,7 +11,7 @@ export function TicketsList() {
         <p className="ticket-price">
           {Intl.NumberFormat('pt-BR', {
             style: 'currency',
-            currency: 'BRL'
+            currency: 'BRL',
           }).format(2131.33)}
         </p>
       </div>
@@ -23,7 +23,7 @@ export function TicketsList() {
         <p className="ticket-price">
           {Intl.NumberFormat('pt-BR', {
             style: 'currency',
-            currency: 'BRL'
+            currency: 'BRL',
           }).format(2131.33)}
         </p>
       </div>
