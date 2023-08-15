@@ -1,0 +1,32 @@
+.extract-content {
+  margin: 2rem 1rem;
+
+  @media (min-width: 768px) {
+    max-width: 1120px;
+    margin: 2rem auto;
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .extract-heading {
+      font-size: 20px;
+      color: var(--text-heading);
+    }
+
+    .paid-bills {
+      color: var(--text-body);
+      font-size: 13px;
+    }
+  }
+
+  .h-separator {
+    background: #E3E3E5;
+    height: 1px;
+    width: 100%;
+    margin: 2rem 0;
+  }
+}

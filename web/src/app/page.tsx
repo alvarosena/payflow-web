@@ -14,6 +14,7 @@ export default function Home() {
             <div className="h-separator"></div>
             <TicketsList />
           </div>
+          <div className="h-separator"></div>
         </div>
         <Navigator />
       </div>

@@ -20,13 +20,13 @@ export function Header() {
           </div>
         </div>
 
-        <div className="alert-container">
+        {/* <div className="alert-container">
           <BarCode />
           <div className="v-separator"></div>
           <p className="p-alert">
             Você tem <strong>14 boletos</strong> cadastrados para pagar
           </p>
-        </div>
+        </div> */}
       </div>
     </header>
   )

@@ -1,19 +1,24 @@
+'use client'
+import './styles.modules.scss'
+import { useContext } from 'react'
 import { AddBoxIcon } from '../AddBoxIcon'
 import { FileListIcon } from '../FileListIcon'
 import { HomeIcon } from '../HomeIcon'
-import './styles.modules.scss'
+import { TicketDialogContext } from '@/app/contexts/TicketDialogContext'
 
 export function Navigator() {
+  const { open } = useContext(TicketDialogContext)
+
   return (
     <div className="nav-bar">
       <div className="nav-bar-content">
-        <a href="">
+        <a href="/">
           <HomeIcon />
         </a>
-        <button className="btn-add">
+        <button className="btn-add" onClick={open}>
           <AddBoxIcon />
         </button>
-        <a href="">
+        <a href="/extratos">
           <FileListIcon />
         </a>
       </div>
