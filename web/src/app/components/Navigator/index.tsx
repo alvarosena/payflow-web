@@ -4,10 +4,10 @@ import { useContext } from 'react'
 import { AddBoxIcon } from '../AddBoxIcon'
 import { FileListIcon } from '../FileListIcon'
 import { HomeIcon } from '../HomeIcon'
-import { TicketDialogContext } from '@/app/contexts/TicketDialogContext'
+import { RegisterDialogContext } from '@/app/contexts/RegisterDialogContext'
 
 export function Navigator() {
-  const { open } = useContext(TicketDialogContext)
+  const { open } = useContext(RegisterDialogContext)
 
   return (
     <div className="nav-bar">

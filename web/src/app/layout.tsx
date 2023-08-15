@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { TicketDialogContextProvider } from './contexts/TicketDialogContext'
+import { RegisterDialogContextProvider } from './contexts/RegisterDialogContext'
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600'] })
 
@@ -18,7 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TicketDialogContextProvider>{children}</TicketDialogContextProvider>
+        <TicketDialogContextProvider>
+          <RegisterDialogContextProvider>
+            {children}
+          </RegisterDialogContextProvider>
+        </TicketDialogContextProvider>
       </body>
     </html>
   )

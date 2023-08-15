@@ -1,0 +1,122 @@
+.register-dialog-container {
+  background: white;
+  position: absolute;
+  width: 100%;
+  border-radius: 0.5rem;
+  z-index: 1000;
+  overflow: auto;
+  bottom: 0;
+  
+  @media (min-width: 768px) {
+    left: 25%;
+    top: 10%; 
+    width: 50%;
+  }
+
+  @media (max-width: 768px) {
+    height: 100vh;
+  }
+
+  .register-dialog-d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      height: 100vh;
+    }
+  }
+
+  .register-dialog-header {
+    padding: 20px;
+
+    .btn-back {
+      background: transparent;
+
+      transition: 0.2s;
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+
+  .register-dialog-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    .register-dialog-content-heading {
+      font-size: 20px;
+      text-align: center;
+      color: var(--text-heading);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-wrapper {
+      width: 100%;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+      input {
+        padding: 14px;
+        font-size: 15px;
+        width: 100%;
+      }
+
+      .input-icon {
+        padding: 14px;
+        border-right: 1px solid var(--border);
+      }
+
+      &:focus-within {
+        border-bottom: 1px solid var(--brand-primary);
+      }
+    }
+  }
+
+  .register-dialog-content-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 1px solid var(--border);
+    height: 76px;
+
+   .btn-registration {
+      width: 100%;
+
+      transition: 0.2s;
+      &:hover {
+        filter: brightness(0.9);
+      }
+
+      &.cancel {
+        color: var(--text-body);
+      }
+
+      &.confirm {
+        color: var(--brand-primary);
+      }
+   }
+  }
+}
+
+.overlay {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  background: rgb(0 0 0 / 0.5);
+
+  &.false {
+    display: none;
+  }
+}
