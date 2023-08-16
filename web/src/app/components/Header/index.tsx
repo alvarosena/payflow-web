@@ -1,7 +1,11 @@
-import { BarCode } from '../BarCode'
+import { ReactNode } from 'react'
 import './styles.modules.scss'
 
-export function Header() {
+interface HeaderProps {
+  children?: ReactNode
+}
+
+export function Header({ children }: HeaderProps) {
   return (
     <header className="header-container">
       <div className="header-content">
@@ -19,14 +23,7 @@ export function Header() {
             />
           </div>
         </div>
-
-        {/* <div className="alert-container">
-          <BarCode />
-          <div className="v-separator"></div>
-          <p className="p-alert">
-            Você tem <strong>14 boletos</strong> cadastrados para pagar
-          </p>
-        </div> */}
+        {children}
       </div>
     </header>
   )

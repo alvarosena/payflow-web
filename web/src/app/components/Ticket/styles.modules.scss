@@ -1,22 +1,27 @@
-.ticket {
+.alert-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
+  background: var(--brand-secondary);
+  padding: 20px;
 
-  .ticket-title {
-    color: var(--text-heading);
-    font-size: 17px;
-    font-weight: 600;
+  border-radius: 5px;
+
+  margin-top: 75px;
+
+  .v-separator {
+    background: var(--white);
+    width: 1px;
+    flex-shrink: 0;
+    height: 40px;
   }
 
-  .ticket-expiration-date {
-    color: var(--text-body);
+  .p-alert {
     font-size: 13px;
-  }
 
-  .ticket-price {
-    color: var(--text-heading);
-    font-weight: 600;
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
   }
 }

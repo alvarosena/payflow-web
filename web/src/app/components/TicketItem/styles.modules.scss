@@ -1,0 +1,23 @@
+.ticket {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  .ticket-title {
+    color: var(--text-heading);
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .ticket-expiration-date {
+    color: var(--text-body);
+    font-size: 13px;
+  }
+
+  .ticket-price {
+    color: var(--text-heading);
+    font-weight: 600;
+  }
+}

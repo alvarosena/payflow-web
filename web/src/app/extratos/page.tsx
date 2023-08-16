@@ -1,6 +1,6 @@
 import './styles.modules.scss'
 import { Header } from '../components/Header'
-import { Ticket } from '../components/Ticket'
+import { TicketItem } from '../components/TicketItem'
 import { Navigator } from '../components/Navigator'
 
 export default function Extract() {
@@ -14,7 +14,7 @@ export default function Extract() {
             <span className="paid-bills">3 pagos</span>
           </div>
           <div className="h-separator"></div>
-          <Ticket />
+          <TicketItem />
         </div>
       </div>
       <Navigator />

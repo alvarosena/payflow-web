@@ -37,33 +37,5 @@
       }
     }
   }
-
-  .alert-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    background: var(--brand-secondary);
-    padding: 20px;
-
-    border-radius: 5px;
-
-    margin-top: 75px;
-
-    .v-separator {
-      background: var(--white);
-      width: 1px;
-      flex-shrink: 0;
-      height: 40px;
-    }
-
-    .p-alert {
-      font-size: 13px;
-
-      @media (min-width: 768px) {
-        font-size: 1rem;
-      }
-    }
-  }
 }
 

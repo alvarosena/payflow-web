@@ -2,11 +2,14 @@ import './home.modules.scss'
 import { Header } from './components/Header'
 import { TicketsList } from './components/TicketsList'
 import { Navigator } from './components/Navigator'
+import { Ticket } from './components/Ticket'
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header>
+        <Ticket />
+      </Header>
       <div className="home-container">
         <div className="home-content">
           <div className="home-d-flex">

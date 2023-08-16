@@ -61,7 +61,7 @@ export function RegisterDialogContextProvider({
                 <div className="input-icon">
                   <OrangeCloseIcon />
                 </div>
-                <input type="text" placeholder="Vencimento" />
+                <input type="date" placeholder="Vencimento" />
               </div>
               <div className="input-wrapper">
                 <div className="input-icon">
