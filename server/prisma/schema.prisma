@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id      String   @id @default(uuid())
+  pic     String
+  name    String
+  email   String   @unique
+  tickets Ticket[]
+
+  @@map("users")
+}
+
+model Ticket {
+  id              String   @id @default(uuid())
+  name            String
+  expiration_date DateTime
+  value           Decimal
+  barcode         String
+  is_paid         Boolean?
+  User            User?    @relation(fields: [user_id], references: [id])
+  user_id         String?
+
+  @@map("tickets")
+}
